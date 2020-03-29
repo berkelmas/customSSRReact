@@ -2,18 +2,17 @@
   "errors": [],
   "warnings": [],
   "version": "4.42.1",
-  "hash": "5dd78e21ea0d68d4ed85",
+  "hash": "303849a16763ea386e60",
   "publicPath": "/build/node/",
   "outputPath": "/Users/berkelmas/reactProjects/customSSR/build/node",
   "assetsByChunkName": {
-    "main": "main-bundle-ef1674fd.js",
-    "pages-HomePage": "pages-HomePage-bundle-5707541e.js",
+    "main": "main-bundle-bf7ba336.js",
     "pages-SecondPage": "pages-SecondPage-bundle-b137b7f8.js"
   },
   "assets": [
     {
-      "name": "main-bundle-ef1674fd.js",
-      "size": 12390,
+      "name": "main-bundle-bf7ba336.js",
+      "size": 26535,
       "chunks": [
         "main"
       ],
@@ -23,21 +22,7 @@
       "info": {
         "immutable": true
       },
-      "emitted": true
-    },
-    {
-      "name": "pages-HomePage-bundle-5707541e.js",
-      "size": 1473,
-      "chunks": [
-        "pages-HomePage"
-      ],
-      "chunkNames": [
-        "pages-HomePage"
-      ],
-      "info": {
-        "immutable": true
-      },
-      "emitted": true
+      "emitted": false
     },
     {
       "name": "pages-SecondPage-bundle-b137b7f8.js",
@@ -51,7 +36,7 @@
       "info": {
         "immutable": true
       },
-      "emitted": true
+      "emitted": false
     }
   ],
   "filteredAssets": 0,
@@ -61,7 +46,7 @@
         "main"
       ],
       "assets": [
-        "main-bundle-ef1674fd.js"
+        "main-bundle-bf7ba336.js"
       ],
       "children": {},
       "childAssets": {}
@@ -73,18 +58,14 @@
         "main"
       ],
       "assets": [
-        "main-bundle-ef1674fd.js"
+        "main-bundle-bf7ba336.js"
       ],
       "children": {},
       "childAssets": {}
     },
     "pages-HomePage": {
-      "chunks": [
-        "pages-HomePage"
-      ],
-      "assets": [
-        "pages-HomePage-bundle-5707541e.js"
-      ],
+      "chunks": [],
+      "assets": [],
       "children": {},
       "childAssets": {}
     },

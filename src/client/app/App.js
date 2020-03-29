@@ -1,5 +1,7 @@
+import "@babel/polyfill";
 import React from "react";
-import loadable from "@loadable/component";
+
+// REACT ROUTER
 import {
   BrowserRouter,
   StaticRouter,
@@ -8,28 +10,34 @@ import {
   Link
 } from "react-router-dom";
 import { renderRoutes } from "react-router-config";
-const HomePage = loadable(() => import("./pages/HomePage"));
-const SecondPage = loadable(() => import("./pages/SecondPage"));
+// REDUX
+import { Provider } from "react-redux";
+import { createStore, applyMiddleware } from "redux";
+import thunk from "redux-thunk";
+import { composeWithDevTools } from "redux-devtools-extension";
+import reducers from "./store/reducers/index";
 
-export const routes = [
-  {
-    path: "/homepage",
-    component: HomePage
-  },
-  {
-    path: "/secondpage",
-    component: SecondPage
-  }
-];
+import { routes } from "./routes";
+
 let App;
 
 if (typeof window !== "undefined") {
-  App = () => <BrowserRouter>{renderRoutes(routes)}</BrowserRouter>;
+  const store = createStore(
+    reducers,
+    composeWithDevTools(applyMiddleware(thunk))
+  );
+  App = () => (
+    <Provider store={store}>
+      <BrowserRouter>{renderRoutes(routes)}</BrowserRouter>
+    </Provider>
+  );
 } else {
   App = props => (
-    <StaticRouter context={{}} location={props.location}>
-      {renderRoutes(routes)}
-    </StaticRouter>
+    <Provider store={props.store}>
+      <StaticRouter context={{}} location={props.location}>
+        {renderRoutes(routes)}
+      </StaticRouter>
+    </Provider>
   );
 }
 
