@@ -1,0 +1,110 @@
+{
+  "errors": [],
+  "warnings": [],
+  "version": "4.42.1",
+  "hash": "d3a91fe0ad93dd6782fb",
+  "publicPath": "/build/client/",
+  "outputPath": "/Users/berkelmas/reactProjects/customSSR/build/client",
+  "assetsByChunkName": {
+    "main": "main-bundle-0e704549.js",
+    "pages-HomePage": "pages-HomePage-bundle-fd2798f9.js",
+    "pages-SecondPage": "pages-SecondPage-bundle-cab7ecd3.js"
+  },
+  "assets": [
+    {
+      "name": "main-bundle-0e704549.js",
+      "size": 1515949,
+      "chunks": [
+        "main"
+      ],
+      "chunkNames": [
+        "main"
+      ],
+      "info": {
+        "immutable": true
+      },
+      "emitted": true
+    },
+    {
+      "name": "pages-HomePage-bundle-fd2798f9.js",
+      "size": 1429,
+      "chunks": [
+        "pages-HomePage"
+      ],
+      "chunkNames": [
+        "pages-HomePage"
+      ],
+      "info": {
+        "immutable": true
+      },
+      "emitted": true
+    },
+    {
+      "name": "pages-SecondPage-bundle-cab7ecd3.js",
+      "size": 1080,
+      "chunks": [
+        "pages-SecondPage"
+      ],
+      "chunkNames": [
+        "pages-SecondPage"
+      ],
+      "info": {
+        "immutable": true
+      },
+      "emitted": true
+    }
+  ],
+  "filteredAssets": 0,
+  "entrypoints": {
+    "main": {
+      "chunks": [
+        "main"
+      ],
+      "assets": [
+        "main-bundle-0e704549.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "namedChunkGroups": {
+    "main": {
+      "chunks": [
+        "main"
+      ],
+      "assets": [
+        "main-bundle-0e704549.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    },
+    "pages-HomePage": {
+      "chunks": [
+        "pages-HomePage"
+      ],
+      "assets": [
+        "pages-HomePage-bundle-fd2798f9.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    },
+    "pages-SecondPage": {
+      "chunks": [
+        "pages-SecondPage"
+      ],
+      "assets": [
+        "pages-SecondPage-bundle-cab7ecd3.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "logging": {
+    "webpack.buildChunkGraph.visitModules": {
+      "entries": [],
+      "filteredEntries": 5,
+      "debug": false
+    }
+  },
+  "children": []
+}
